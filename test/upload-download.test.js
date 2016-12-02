@@ -131,8 +131,7 @@ describe('storage service', function() {
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
       .expect(200, function(err, res) {
-        if (err) done(err);
-        done();
+        done(err);
       });
   });
 
@@ -348,8 +347,7 @@ describe('storage service', function() {
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
       .expect(200, function(err, res) {
-        if (err) return done(err);
-        done();
+        done(err);
       });
   });
 
